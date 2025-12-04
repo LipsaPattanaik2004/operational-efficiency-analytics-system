@@ -1,0 +1,7 @@
+*.pbix
+*.pbit
+__pycache__/
+venv/
+*.sqlite
+*.db
+.DS_Store
