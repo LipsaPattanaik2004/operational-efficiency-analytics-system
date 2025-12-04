@@ -1,0 +1,11 @@
+Total Units = SUM(production_records[units_produced])
+
+Total Defects = SUM(production_records[defects])
+
+Defect Rate % =
+DIVIDE([Total Defects], [Total Units], 0) * 100
+
+Total Downtime = SUM(machine_logs[downtime_minutes])
+
+Units per Minute =
+DIVIDE([Total Units], (24 * 60) - [Total Downtime], 0)
